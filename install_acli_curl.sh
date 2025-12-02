@@ -29,7 +29,7 @@ trap "rm -f $TEMP_FILE" EXIT
 
 # Get the latest release download URL
 echo "Fetching latest acli release..."
-DOWNLOAD_URL="$ACLI_REPO/$BINARY_NAME"
+DOWNLOAD_URL="https://acli.atlassian.com/linux/latest/acli_linux_arm64/acli"
 
 echo "Downloading from: $DOWNLOAD_URL"
 if ! curl -fsSL -o "$TEMP_FILE" "$DOWNLOAD_URL"; then
